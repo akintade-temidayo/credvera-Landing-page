@@ -8,120 +8,475 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
 <body>
-    <section class="relative min-h-[90vh] bg-[url('assets/images/backgroud.png')] bg-no-repeat bg-cover bg-bottom">
-    <div class="max-w-[1440px] mx-auto  items-center">
-        <nav class="w-full flex justify-between items-center px-12 py-8 text-black">
-            <div class="w[5rem]">
-                <img src="assets/icons/Frame24.png" alt="logo">
+<!-- Hero Section -->
+    <section class="min-h-screen bg-[url('assets/images/backgroud.png')]">
+        <nav class="flex items-center justify-between px-7 py-8 mx-auto max-w-7xl lg:px-12">
+<!-- logo -->          
+            <div class="flex items-center gap-2">
+                <img src="assets/icons/Frame24.png" alt="Credvera Logo">
             </div>
-            <div class="hidden lg:flex gap-10 text-white text-[17px]">
-                <a href="#">Features</a>
-                <a href="#">Investors</a>
-                <a href="#">Borrowers</a>
-                <a href="#">Process</a>
-                <a href="#">Contacts</a>
-            </div>
-            <button class="text-[#00A69C] bg-white backdrop-blur-md border border-white/30 px-6 py-3 rounded-xl hover:bg-white hover:text-[#004D40] transition-all">
-        Download App
-    </button>
+<!-- MENU -->  
+ <!-- For large screen -->  
+            <div class="hidden md:flex items-center lg:space-x-8 md:space-x-4 text-sm font-medium text-gray-200 ">
+            <a href="#" class="hover:text-gray-300">Features</a>
+            <a href="#" class="hover:text-gray-300">Investors</a>
+            <a href="#" class="hover:text-gray-300">Borrower</a>
+            <a href="#" class="hover:text-gray-300">Process</a>
+            <a href="#" class="hover:text-gray-300">Contact</a>
+        </div>
+        <a href="#" class="hidden lg:block md:block bg-white text-[#00A69C] px-6 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00A69C] hover:text-white transition ">
+            Download App
+        </a>
+ <!-- For small screen -->  
+  <div class="group relative lg:hidden md:hidden block">
+                    <button class="bg-gray-200 px-3 py-1 md:px-4 md:py-2 cursor-pointer rounded-xl">☰ Menu</button>
+                    <div class="hidden group-hover:block absolute bg-white shadow-lg p-2 w-40 rounded-xl ml-[-5rem]">
+                        <a href="#" class="block p-2 hover:bg-[#00A69C] hover:text-white transition rounded-xl font-medium">Features</a>
+                        <a href="#" class="block p-2 hover:bg-[#00A69C] hover:text-white transition rounded-xl font-medium">Investors</a>
+                        <a href="#" class="block p-2 hover:bg-[#00A69C] hover:text-white transition rounded-xl font-medium">Borrower</a>
+                        <a href="#" class="block p-2 hover:bg-[#00A69C] hover:text-white transition rounded-xl font-medium">Process</a>
+                        <a href="#" class="block p-2 hover:bg-[#00A69C] hover:text-white transition rounded-xl font-medium">Contact</a>
+                        <a href="#" class="block p-2  bg-[#00A69C] text-gray-800 font-semibold hover:bg-[#00897B] hover:text-white transition rounded-xl">Download App</a>
+                    </div>
+                </div>
         </nav>
-        <!-- body of the header -->
-         <div class="flex justify-center gap-[10rem] mt-[5rem] gap-10">
-            <div class="">
-            <span class="bg-[#00897B] text-white px-4 py-2 rounded-full text-sm font-medium">
+<!-- Body section -->  
+        <div class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <!-- typo -->
+            <div class="mt-[4rem] md:mt-0">
+            <span class="bg-[#00A69C] text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg shadow-[#00A69C]/50">
                 Get Started with Credvera !
             </span>
-            <h1 class="text-6xl font-bold leading-tight text-white mt-2">
-                Smarter, Easier <br>Borrowing and <br>Lending
+            <h1 class="text-4xl text-white font-bold leading-tight text-black mt-[2rem]">
+                Smarter, Easier <br> Borrowing and <br>Lending
             </h1>
-            <p class="text-white text-lg max-w-md leading-relaxed mt-2">
-                Discover a more efficient and user-friendly approach to borrowing or lending money, created to simplify and enhance your financial transactions.
+            <p class="text-white text-lg max-w-md leading-relaxed mt-[2rem]">
+                Discover a more efficient and user-friendly approach to <br>
+                borrowing or lending money, created to simplify and enhance <br>
+                 your financial transactions.
             </p>
-            <div class="flex gap-3 mt-6 mb-10">
-    <button class="flex justify-center items-center gap-2 bg-[#FFFFFF] px-3 py-1 rounded-[5px] hover:bg-green-800 transition-colors ">
-      
-      <div>
-        <img src="assets/icons/playstore.png" alt="" class="w-6 h-6">
-      </div>
-      <div class="text-justify">
-        <p class="text-xs">GET IN ON</p>
-      <P>Google Play</P>
-      </div>
-    </button>
-    <button class="flex justify-center items-center gap-2 bg-white text-black px-3 py-1 rounded-[5px] hover:bg-green-800">
-      
-      <div>
-        <img src="assets/icons/applestore.png" alt="" class="w-5 h-6">
-      </div>
-      <div class="text-justify">
-        <p class="text-xs">Download on the</p>
-      <P>Apple Store</P>
-      </div>
-    </button>
-</div>
+                <div class="flex flex-wrap gap-4 mt-[2rem] ">
+                    <button class="border border-white text-white rounded-lg px-4 py-2 flex items-center gap-3 hover:bg-[#00A69C] hover:text-white transition transition w-auto md:w-212">
+                        <img src="assets/icons/playstore.png" alt="Google Play" class="h-10">
+                            <div class="text-justify">
+                             <p class="text-sm font-medium">GET IN ON</p>
+                                 <p class="text-base lg:text-base md:text-16 font-semibold">Google Play</p>
+                            </div>
+                    </button>
+                    <button class="bg-white text-black border border-white rounded-lg px-4 py-2 flex items-center gap-3 hover:bg-[#00A69C] hover:text-white transition transition w-auto md:w-212">
+                         <img src="assets/icons/applestore.png" alt="App Store" class="h-10">
+                          <div class="text-justify">
+                             <p class="text-sm font-medium">Download on the</p>
+                                 <p class="text-base lg:text-base md:text-16 font-semibold">App Store</p>
+                            </div>
+                    </button>
+                </div>
             </div>
-            <div><img src="assets/images/Group35.png" alt="image"></div>
+<!-- image -->
+            <div class="relative">
+                <div class="rounded-full shadow-2xl"><img src="assets/images/herosection.png" alt="image"></div>
+<!-- top box -->
+                <div class="absolute -top-10 -left-6 md:-left-12 bg-white p-5 rounded-2xl shadow-xl w-48 md:w-56 text-gray-800">
+                    <img src="assets/icons/topabsolute.png" alt="">
+                    <p class="text-sm text-[#006F68] font-medium">Loan Application</p>
+                    <p class="text-lg font-bold mt-1">N500,000</p>
+                    <p class="text-[#626264] text-sm mt-1">5% Interest Rate</p>
+                </div>
+<!-- bottom box -->
+                <div class="absolute -bottom-5 right-5 md:-right-12 lg:bottom-6 bg-white p-5 rounded-2xl shadow-xl w-48 md:w-56 lg:w-64 text-gray-800">
+                    <img src="assets/icons/bottomabsolute.png" alt="">
+                    <p class="text-sm text-[#EE4266] font-medium">Offer Submitted</p>
+                    <p class="text-lg font-bold mt-1">N150,000</p>
+                    <p class="text-[#626264] text-sm mt-1">5% interest rate/6 month tenure</p>
+                </div>
+            </div>
         </div>
-        
-   </div> 
     </section>
 
  <!-- Get loan section -->
-    <section class="relative bg-white bg-no-repeat bg-cover bg-bottom">
-    <div class="max-w-[1440px] mx-auto  items-center">
-        <!-- typo -->
-         <div class="flex justify-center mt-[10rem] gap-[10rem]">
-            <div class="mt-[5rem]">
-            <span class="bg-[#00A496] text-white px-4 py-2 rounded-full text-sm font-medium">
-                I need Loan
-            </span>
-            <h1 class="text-4xl font-bold leading-tight text-black mt-[2rem]">
-               Get Loans to fuel your <br> goals
-            </h1>
-            <p class="text-gray-500 text-lg max-w-md leading-relaxed mt-[3rem]">
-                Discover a more efficient and user-friendly approach to borrowing or lending money, created to simplify and enhance your financial transactions.
-            </p>
-            <button class="bg-[#00A496] text-white px-10 py-4 w-[16rem] rounded-lg font-semibold hover:bg-[#00897B] transition-colors shadow-lg mt-[3rem]">
-            Download App
-        </button>
+    <section class="bg-white py-16 lg:py-24 overflow-hidden ">
+<!-- parent div -->
+        <div class="mx-auto max-w-7xl px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- typo part -->
+            <div class="flex flex-col justify-center items-start gap-2">
+                <span class="bg-[#AAE1DE] text-[#00A69C] px-4 py-3 rounded-full text-sm font-medium">
+                    I need Loan
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mt-4">
+                    Get Loans to fuel your <br> goals
+                </h2>
+                <p class="text-gray-500 text-lg leading-relaxed mt-4">
+                   Discover a more efficient and user-friendly approach to <br>
+                   borrowing or lending money, created to simplify and <br>
+                   enhance your financial transactions.
+                </p>
+                <button class="bg-[#00A69C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#00897B] transition-colors shadow-lg mt-10 md:mt-12">
+                    Download App
+                </button>
             </div>
-              <!-- image -->
-            <div class="rounded-full"><img src="assets/images/woman.png" alt="image"></div>
-        </div>     
-   </div> 
+<!-- image part -->
+            <div class="relative rounded-3xl shadow-xl overflow-hidden">
+                <img src="assets/images/woman.png" alt="" class=" w-full h-auto rounded-[2rem] shadow-xl">
+<!-- inner absolute -->
+                <div class="absolute bottom-7 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[80%] bg-white backdrop-blur-sm p-4 rounded-2xl shadow-2xl flex items-center gap-5">
+                    <img src="assets/icons/Frame1.png" alt="absolute icon" class="h-12 w-12">
+                    <div>
+                        <p class="text-lg text-black font-bold">Transaction Successful</p>
+                        <p class="text-[#626264] text-medium mt-1">You have just apply for a loan of ₦500,000 naira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 <!-- invest section -->   
-    <section class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-white">
-    
-    <div class="relative">
-        <img src="assets/images/man.png" alt="Business Woman" class="w-full h-auto rounded-[2rem] shadow-xl">
-    </div>
+    <section class="bg-white mb-24 lg:py-24 overflow-hidden ">
+<!-- parent div -->
+        <div class="mx-auto max-w-7xl px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- image part -->
+            <div class="relative rounded-3xl shadow-xl overflow-hidden">
+                <img src="assets/images/man.png" alt="" class=" w-full h-auto rounded-[2rem] shadow-xl">
+<!-- inner absolute -->
+                <div class="absolute bottom-7 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[80%] bg-white backdrop-blur-sm p-4 rounded-2xl shadow-2xl flex items-center gap-5">
+                    <img src="assets/icons/Frame2.png" alt="absolute icon" class="h-12 w-12">
+                    <div>
+                        <p class="text-lg text-black font-bold">Transaction Successful</p>
+                        <p class="text-[#626264] text-medium mt-1">Your loan investment has been made successfully!</p>
+                    </div>
+                </div>
+            </div>
+<!-- typo part -->
+            <div class="flex flex-col justify-center items-start gap-2">
+                <span class="bg-[#AAE1DE] text-[#00A69C] px-4 py-3 rounded-full text-sm font-medium">
+                    I want to invest
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mt-4">
+                   Invest and earn profit <br>by giving out loans
+                </h2>
+                <p class="text-gray-500 text-lg leading-relaxed mt-4">
+                   Discover a more efficient and user-friendly approach to <br>
+                   borrowing or lending money, created to simplify and <br>
+                   enhance your financial transactions.
+                </p>
+                <button class="bg-[#00A69C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#00897B] transition-colors shadow-lg mt-10 md:mt-12">
+                    Download App
+                </button>
+            </div>
 
-    <div class="flex flex-col items-start gap-6">
-        <span class="bg-[#E0F2F1] text-[#00897B] px-4 py-1.5 rounded-full text-sm font-medium">
-            I want to invest
-        </span>
-        <h2 class="text-4xl font-bold text-[#1A1A1A] leading-tight">
-            Invest and earn profit <br> by giving out loans
-        </h2>
-        <p class="text-gray-500 text-lg leading-relaxed">
-           Discover a more efficient and user-friendly approach to <br> borrowing or lending money, created to simplify and <br> enhance your financial transactions.
-        </p>
-        <button class="bg-[#00A496] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#00897B] transition-colors shadow-lg">
-            Download App
-        </button>
-    </div>
+        </div>
+    </section>
+
+<!-- Borrow Features section --> 
+    <section class="bg-[#fcfdfd] py-15 lg:py-20 mx-auto max-w-7xl px-6 lg:px-12 mb-20 lg:mb-25">
+        <div class="flex flex-col justify-center items-center gap-2">
+                <span class="bg-[#AAE1DE] text-[#00A69C] px-2 py-1 rounded-full text-sm text-2xl">
+                    Borrow Features
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-bold text-black  leading-tight mt-4 text-center">
+                    Our Features Makes <br>Getting loan Easy
+                </h2>
+        </div>
+<!-- grids --> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mt-12">
+                <div class="md:col-span-2 bg-white rounded-2xl p-10 lg:p-8 shadow-sm border border-gray-100 flex flex-col md:flex-row justify-between overflow-hidden ">
+                    <div class="z-10 "><img src="assets/icons/Frame3.png" alt="">
+                        <div class="mt-5">
+                            <p class="text-2xl font-bold text-black ">Easy Repayment Scheme</p>
+                            <p class="text-[#626264] text-medium mt-1">
+                                Lorem ipsum dolor sit amet consectetur. <br>
+                                Neque enim non cras sed semper at. Vel <br>
+                                dolor adipiscing non eu eget eget sit quam sed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-72 h-full lg:w-96">
+                    <img src="assets/images/iPhone14Pro.png" alt="App interface" class="w-400 drop-shadow-2xl">
+                </div>
+                </div>
+            <div class="bg-white rounded-2xl p-10 lg:p-10 shadow-sm border border-gray-100 flex flex-col relative group">
+                    <div class="z-10 max-w-xs"><img src="assets/icons/Frame4.png" alt="">
+                        <div class="mt-5">
+                            <p class="text-[22px] font-bold text-black ">Loan Application with ease</p>
+                            <p class="text-[#626264] text-medium mt-1">
+                                Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bg-[#00A69C] rounded-2xl p-10 lg:p-10 shadow-sm border border-gray-100 flex flex-col relative group">
+                    <div class="z-10 max-w-xs"><img src="assets/icons/Frame5.png" alt="">
+                        <div class="mt-5">
+                            <p class="text-[22px] font-bold text-white ">Loan Application with ease</p>
+                            <p class="text-[#626264] text-medium mt-1 text-white">
+                                Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bg-white rounded-2xl p-10 lg:p-10 shadow-sm border border-gray-100 flex flex-col relative group">
+                    <div class="z-10 max-w-xs"><img src="assets/icons/Frame6.png" alt="">
+                        <div class="mt-5">
+                            <p class="text-[22px] font-bold text-black ">Negotiate loan Offer </p>
+                            <p class="text-[#626264] text-medium mt-1">
+                               Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col relative group">
+                    <img src="assets/images/manholdingphone.png" alt="">
+                    </div>
+            </div>
+    </section>
+
+<!-- Investors Features section --> 
+    <section class="bg-[#fcfdfd] py-15 lg:py-20 mx-auto max-w-7xl px-6 lg:px-12 mt-10 lg:mt-20">
+        <div class="flex flex-col justify-center items-center gap-2">
+                <span class="bg-[#F8EBF5] text-[#EE4266] border border-[#EE4266] px-2 py-1 rounded-full text-sm text-2xl">
+                    Investors Features
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-bold text-black  leading-tight mt-4 text-center">
+                    Our features will help you in <br>giving out loans with ease
+                </h2>
+        </div>
+<!-- grids --> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mt-12">
+<!-- grid 1 -->   
+            <div class="bg-[#EE4266] rounded-2xl p-10 lg:p-10 shadow-sm border border-gray-100 flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame7.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-bold text-white ">Keep Track of loans</p>
+                        <p class="text-medium mt-1 text-white">
+                         Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+<!-- grid 2 -->
+            <div class="bg-pink-50 rounded-2xl p-10 lg:p-10 shadow-sm border border-gray-100 flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame8.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-bold text-[#00211F]">Solid repayment system </p>
+                        <p class="text-[#626264] text-medium mt-1">
+                        Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+<!-- grid 3 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col relative group">
+                <img src="assets/images/Framewithman.png" alt="">
+            </div>
+<!-- grid 4/5 -->
+            <div class="bg-pink-50 md:col-span-2 bg-white rounded-2xl p-10 lg:p-8 shadow-sm border border-gray-100 flex flex-col md:flex-row justify-between overflow-hidden ">
+                <div class="w-full md:w-72 h-full lg:w-96">
+                    <img src="assets/images/Body2-0.png" alt="App interface" class="w-400 drop-shadow-2xl">
+                </div>
+                <div class="z-10 mt-7 md:mt-0"><img src="assets/icons/Frame9.png" alt="">
+                    <div class="mt-10">
+                        <p class="text-2xl font-bold text-[#00211F]">Give Loan and earn profit</p>
+                        <p class="text-[#626264] text-medium mt-5">
+                            Lorem ipsum dolor sit amet consectetur. <br>
+                            Neque enim non cras sed semper at. Vel <br>
+                            dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+<!-- grid 6 -->
+            <div class="bg-pink-50 rounded-2xl p-10 lg:p-10 shadow-sm border border-gray-100 flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame10.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-bold text-[#00211F]">Easy to Use Wallet </p>
+                        <p class="text-[#626264] text-medium mt-1">
+                        Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Process to apply for a loan -->
+    <section class="bg-[#00534E] py-15 lg:py-20 mx-auto w-full px-6 lg:px-12 mt-10 lg:mt-10 mb-20">
+        <div class="flex flex-col justify-center items-center gap-2">
+                <span class="bg-[#F8EBF5] text-[#00A69C] border border-[#00A69C] px-2 py-1 rounded-full text-sm text-1xl mt-4 md:mt-4 lg:mt-0">
+                    Process
+                </span>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white leading-tight mt-2 text-center">
+                    Apply for loan in few steps
+                </h2>
+                <span class="text-sm text-[#E6E9EE] mt-1 text-center">
+                    Get your first loan by following this simple process
+                </span>
+<!-- grids --> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-5 mt-12 mb-5">      
+<!-- grid 1 -->   
+            <div class="bg-[#024D48] rounded-2xl p-10 lg:p-10 shadow-sm flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame11.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-medium text-white ">Sign up and create loan applications</p>
+                        <p class="text-sm  text-[#FFFFFF] mt-1">
+                         Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+<!-- grid 2 -->
+             <div class="bg-[#024D48] rounded-2xl p-10 lg:p-10 shadow-sm flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame12.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-medium text-white ">Receive Applications</p>
+                        <p class="text-sm  text-[#FFFFFF] mt-1">
+                         Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-5 mb-10 lg:mb-0"> 
+<!-- grid 3 -->   
+            <div class="bg-[#024D48] rounded-2xl p-10 lg:p-10 shadow-sm flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame13.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-medium text-white ">Negotiate Application terms</p>
+                        <p class="text-sm  text-[#FFFFFF] mt-1">
+                         Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+<!-- grid 4 -->
+            <div class="bg-[#024D48] rounded-2xl p-10 lg:p-10 shadow-sm flex flex-col relative group">
+                <div class="z-10 max-w-xs"><img src="assets/icons/Frame14.png" alt="">
+                    <div class="mt-5">
+                        <p class="text-[22px] font-medium text-white ">Accept terms and receive loan</p>
+                        <p class="text-sm  text-[#FFFFFF] mt-1">
+                         Lorem ipsum dolor sit amet consectetur. Neque enim non cras sed semper at. Vel dolor adipiscing non eu eget eget sit quam sed.</p>
+                    </div>
+                </div>
+            </div>
+     </div>   
+    </section>
+
+<!-- Pre-Footer --> 
+    <section class="py-24 px-6">
+        <div class="mx-auto max-w-7xl bg-[url('assets/images/backgroud.png')] rounded-[3rem]  flex flex-col lg:flex-row items-center justify-center gap-12 relative overflow-hidden">
+            <div class="mt-20 lg:ml-[18rem]"><img src="assets/images/Body.png" alt="phone"></div>
+        <div class="mt-1 md:mt-2 ml-3 md:ml-0">
+            <h1 class="text-4xl text-white font-bold leading-tight text-black mt-4">
+                Download the Credvera <br>App Today!
+            </h1>
+                <div class="flex flex-wrap gap-4 mt-[2rem] mb-5 md:mb-0">
+                    <button class="border border-white text-white rounded-lg px-4 py-2 flex items-center gap-3 hover:bg-[#00A69C] hover:text-white transition transition w-auto md:w-212">
+                        <img src="assets/icons/playstore.png" alt="Google Play" class="h-10">
+                            <div class="text-justify">
+                             <p class="text-sm font-medium">GET IN ON</p>
+                                 <p class="text-base lg:text-base md:text-16 font-semibold">Google Play</p>
+                            </div>
+                    </button>
+                    <button class="bg-white text-black border border-white rounded-lg px-4 py-2 flex items-center gap-3 hover:bg-[#00A69C] hover:text-white transition transition w-auto md:w-212">
+                         <img src="assets/icons/applestore.png" alt="App Store" class="h-10">
+                          <div class="text-justify">
+                             <p class="text-sm font-medium">Download on the</p>
+                                 <p class="text-base lg:text-base md:text-16 font-semibold">App Store</p>
+                            </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
 <!-- Footer --> 
-       <footer class="w-full font-poppins ">
-        <!-- Subscription --> 
-            <div class="bg-[url('assets/images/backgroud.png')] bg-no-repeat w-[1140px] h-[429px] rounded-[30px]">
-                
-             </div>     
+    <footer class="bg-[#00534E]">
+        <div class="mx-auto w-full max-w-screen-xl p-10 lg:p-20 mb-20 items-center">
+        <div class="flex flex-col md:flex-row md:justify-between gap-10">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="assets/icons/Frame24.png"  alt="FlowBite Logo" />
+              </a>
+              <p class="mt-10 text-[#FFFFFF] font-[16px] text-justify">
+                Lorem ipsum dolor sit amet consectetur. <br>
+                Neque enim non cras sed semper at. Vel <br>
+                dolor adipiscing non eu eget eget sit quam <br>
+                sed. Lorem ipsum dolor sit amet <br>
+                consectetur. Neque enim non cras sed <br>
+                semper at. Vel dolor adipiscing non eu <br>eget eget sit quam 
+                sed.
+              </p>
+          </div>
+          
+              <div> 
+                  <ul class="text-body text-[#FFFFFF] font-medium">
+                      <li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> Quick Links</a>
+                      </li>
+                      <li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline">Features</a>
+                      </li><li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> Investors</a>
+                      </li><li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> Borrowers</a>
+                      </li><li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> Testiomonals</a>
+                      </li><li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> FAQ</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="text-body font-medium text-[#FFFFFF]">
+                    <li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> Contact Us</a>
+                      </li>
+                      <li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline">Facebook</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Instagram</a>
+                      </li>
+                      <li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline">X (Twitter)</a>
+                      </li>
+                      <li class="mb-4 font-medium">
+                          <a href="#" class="hover:underline"> Linkedin</a>
+                      </li>
+                  </ul>
+              </div>
+              
 
-       </footer>
-</section>
+<div class=" rounded-base shadow-sm">
+    <form action="#">
+        <h5 class="text-3xl font-semibold text-heading mb-4 text-[#FFFFFF]">Subscribe to our <br>Newsletter</h5>
+        <div class="mb-4">
+            <input type="email" placeholder="Enter email address" class="w-full bg-white/5 border rounded-xl px-4 py-3 text-sm mb-1 outline-none focus:border-credvera-teal transition h-15">
+        </div>
+        <div>
+            <button class="bg-[#00A69C] text-white font-bold py-3 rounded-xl hover:opacity-90 transition hover:bg-white hover:text-[#00A69C] transition transition w-full md:w-212">
+                            <div class="">
+                             <p class="text-16px font-medium">Sign me up!</p>
+                            </div>
+            </button>
+        </div>
+    </form>
+</div>
+          </div>
+      </div>
+         <div class="mx-auto max-w-7xl px-6 lg:px-12 mt-20 pt-8 border-t border-white flex flex-col md:flex-row justify-between text-white/30 text-xs"></div> 
+<!-- Bottom Footer -->
+     <div
+          class=" flex flex-col md:flex-row items-center justify-between P-6 lg:p-12 mx-auto"
+        >
+          <p class="text-[16px] text-[#FFFFFF]"><i class="fa-regular fa-copyright"></i> Copyright. Credvera 2024</p>
+          <p class="text-[16px] text-[#FFFFFF] hover:text-[#1E1E1E]">Developed by Akintade Temidayo</p>
+          <div class="flex items-center gap-10 text-[16px] text-[#FFFFFF]/70">
+            <a href="#" class="hover:text-[#1E1E1E]">Terms of use</a>
+            <a href="#" class="hover:text-[#1E1E1E]">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 </body>
 </html>
